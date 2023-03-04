@@ -37,7 +37,7 @@ jobs:
       run: |
         sudo sh -c "curl https://raw.githubusercontent.com/kadwanev/retry/master/retry -o /usr/local/bin/retry && chmod +x /usr/local/bin/retry"
         cd ..
-        retry 'git clone --branch=master https://gitee.com/openLuat/luatos-soc-idf5'
+        retry 'git clone --branch=master https://github.com/igorkll/luatos-soc-idf5'
     - name: build
       env:
         ESP_CHIP: ${{ matrix.ESP_CHIP }}

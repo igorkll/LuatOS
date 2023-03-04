@@ -14,7 +14,7 @@
 #define LUAT_LOG_TAG "main"
 #include "luat_log.h"
 
-#define LUAT_HEAP_SIZE (1024*1024)
+#define LUAT_HEAP_SIZE (256*1024)
 uint8_t luavm_heap[LUAT_HEAP_SIZE] = {0};
 
 int cmdline_argc;

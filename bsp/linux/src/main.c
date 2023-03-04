@@ -13,7 +13,7 @@
 // #include "FreeRTOS.h"
 // #include "task.h"
 
-#define LUAT_HEAP_SIZE (1024*1024)
+#define LUAT_HEAP_SIZE (256*1024)
 uint8_t luavm_heap[LUAT_HEAP_SIZE] = {0};
 void *timer_thread_start(void *);
 

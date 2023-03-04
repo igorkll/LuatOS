@@ -7,7 +7,7 @@
 
 #ifdef BSP_USING_WM_LIBRARIES
     #include "wm_ram_config.h"
-    #define LUAT_HEAP_SIZE 64*1024
+    #define LUAT_HEAP_SIZE 256*1024
     #define W600_HEAP_ADDR 0x20028000
     #ifdef RT_USING_WIFI
 
@@ -19,9 +19,9 @@
 #else
     #ifndef LUAT_HEAP_SIZE
         #ifdef SOC_FAMILY_STM32
-            #define LUAT_HEAP_SIZE (64*1024)
+            #define LUAT_HEAP_SIZE (256*1024)
         #else
-            #define LUAT_HEAP_SIZE 128*1024
+            #define LUAT_HEAP_SIZE 256*1024
         #endif
     #endif
     ALIGN(RT_ALIGN_SIZE) static char luavm_buff[LUAT_HEAP_SIZE] = {0};
